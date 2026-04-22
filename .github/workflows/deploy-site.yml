@@ -2,7 +2,8 @@ name: Website Deployment
 run-name: ${{ github.actor }} is deploying to GitHub Pages...
 on: [push]
 jobs:
-  runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
   steps:
   - uses: actions/checkout@v4
   - uses: r-lib/actions/setup-r@v2
